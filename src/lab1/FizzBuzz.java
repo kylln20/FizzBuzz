@@ -39,7 +39,7 @@ class FizzBuzz {
         }
     }
 
-    private static int getFizzBuzz(int i) {
+    public static int getFizzBuzz(int i) {
         if(i % 3 == 0 && i % 5 == 0){
             System.out.println("Fizz Buzz");
         } else if (i % 3 == 0) {
