@@ -6,7 +6,7 @@ package lab1;
 class FizzBuzz {
 
     public static void main(String[] args) {
-
+        /*
         for (int i = 1; i <= 100; i++) {
 
             // Find out which numbers divide i.
@@ -32,5 +32,24 @@ class FizzBuzz {
 
             }
         }
+        */
+        int i = 1;
+        while (i <= 100){
+            i = getFizzBuzz(i);
+        }
+    }
+
+    private static int getFizzBuzz(int i) {
+        if(i % 3 == 0 && i % 5 == 0){
+            System.out.println("Fizz Buzz");
+        } else if (i % 3 == 0) {
+            System.out.println("Fizz");
+        } else if (i % 5 == 0){
+            System.out.println("Buzz");
+        } else{
+            System.out.println(i);
+        }
+        i++;
+        return i;
     }
 }
