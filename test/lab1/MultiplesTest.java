@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class MultiplesTest {
 
-    @Test
+    @org.junit.Test
     public void testFifteen() {
         assertEquals(7,
                 Multiples.multiples(16, 3, 5),
@@ -37,12 +37,12 @@ public class MultiplesTest {
                 "Multiples.multiples(1000, 4, 4) is incorrect.");
     }
 
-//    // uncomment once you implement the overloaded version of multiples
-//    @Test
-//    public void testDefault() {
-//        assertEquals(466,
-//            Multiples.multiples(),
-//            "Multiples.multiples() is incorrect for default values");
-//    }
+    // uncomment once you implement the overloaded version of multiples
+    @Test
+    public void testDefault() {
+        assertEquals(466,
+            Multiples.multiples(),
+            "Multiples.multiples() is incorrect for default values");
+    }
 
 }
